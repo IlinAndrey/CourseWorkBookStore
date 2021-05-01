@@ -24,36 +24,35 @@
 <div class="container pt-5 d-flex justify-content-center">
     <form name="signUpUser" method="post" action="/sign-up">
         <div class="mb-3">
-            <label for="usernameInput" class="form-label">Username</label>
+            <label for="usernameInput" class="form-label">Имя</label>
             <input class="form-control {{#alreadyExists}}is-invalid{{/alreadyExists}}"
                    id="usernameInput"
                    name="username" type="text" placeholder="username">
             <div class="invalid-feedback">
-                User already exists
+                Пользователь уже существует
             </div>
         </div>
         <div class="mb-3">
-            <label for="passwordInput" class="form-label">Password</label>
+            <label for="passwordInput" class="form-label">Пароль</label>
             <input class="form-control {{#notMatched}}is-invalid{{/notMatched}}"
                    id="passwordInput"
                    name="password" type="password"
                    placeholder="••••••••">
             <div class="invalid-feedback">
-                Password does not match
+                Пароль не подходит
             </div>
         </div>
         <div class="mb-3">
-            <label for="matchingPasswordInput" class="form-label">Confirm
-                password</label>
+            <label for="matchingPasswordInput" class="form-label">Подтвердите пароль</label>
             <input class="form-control {{#notMatched}}is-invalid{{/notMatched}}"
                    id="matchingPasswordInput"
                    name="matchingPassword" type="password"
                    placeholder="••••••••">
             <div class="invalid-feedback">
-                Password does not match
+                Пароль не подходит
             </div>
         </div>
-        <button type="submit" class="btn btn-outline-primary">Sign up</button>
+        <button type="submit" class="btn btn-outline-primary">Зарегестрироваться</button>
     </form>
 </div>
 </body>

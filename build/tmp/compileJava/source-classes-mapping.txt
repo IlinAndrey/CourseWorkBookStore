@@ -32,8 +32,8 @@ com/bookstore/service/UserService.java
  com.bookstore.service.UserService
 com/bookstore/Models/Book.java
  com.bookstore.Models.Book
-com/bookstore/controller/HomeController.java
- com.bookstore.controller.HomeController
+com/bookstore/config/SecurityConfig.java
+ com.bookstore.config.SecurityConfig
 com/bookstore/config/AppConfig.java
  com.bookstore.config.AppConfig
 com/bookstore/repositories/UserRepository.java
@@ -48,5 +48,5 @@ com/bookstore/BookstoreApplication.java
  com.bookstore.BookstoreApplication
 com/bookstore/Models/Author.java
  com.bookstore.Models.Author
-com/bookstore/config/SecurityConfig.java
- com.bookstore.config.SecurityConfig
+com/bookstore/controller/HomeController.java
+ com.bookstore.controller.HomeController

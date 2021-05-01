@@ -22,6 +22,6 @@ public class HomeController {
                 "books",
                 bookService.takeAllBooks(dtoConverter::toBookResponseList)
         );
-        return "home";
+        return "bucket";
     }
 }
