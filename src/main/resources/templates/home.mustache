@@ -17,15 +17,14 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
                     <a class="nav-link" aria-current="page"
-                       href="/home">Home</a>
+                       href="/home">Домой</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="/book/add">Add
-                        book</a>
+                    <a class="nav-link" aria-current="page" href="/book/add">Добавить книгу в корзину</a>
                 </li>
             </ul>
             <form class="d-flex">
-                <a href="/logout" role="button" class="btn btn-outline-light">Sign out</a>
+                <a href="/logout" role="button" class="btn btn-outline-light">Выйти</a>
             </form>
         </div>
     </div>
@@ -45,19 +44,19 @@
                                       class="px-2">
                                     <button type="submit"
                                             class="btn btn-outline-primary btn-sm">
-                                        Open
+                                        Открыть
                                     </button>
                                 </form>
                                 <form method="post"
                                       action="/book/{{id}}/delete">
                                     <button type="submit"
                                             class="btn btn-outline-danger btn-sm">
-                                        Delete
+                                        Удалить
                                     </button>
                                 </form>
                             </div>
                         </div>
-                        <ul class="list-group pt-4">
+                        <ul class="list-book pt-4">
                             {{#authors}}
                                 <form method="post"
                                       action="/author/{{id}}/delete"
@@ -66,7 +65,7 @@
                                         {{lastName}} {{firstName}} {{middleName}}
                                         <button type="submit"
                                                 class="btn btn-outline-danger btn-sm">
-                                            Remove
+                                            Изменить
                                         </button>
                                     </li>
                                 </form>
@@ -78,7 +77,7 @@
         {{/books}}
     </div>
     {{^books}}
-        <h3>No books added...</h3>
+        <h3>Книги не добавлены...</h3>
     {{/books}}
 </div>
 </body>

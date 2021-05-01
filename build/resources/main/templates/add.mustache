@@ -17,15 +17,14 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
                     <a class="nav-link" aria-current="page"
-                       href="/home">Home</a>
+                       href="/home">Домой</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="/group/add">Add
-                        book</a>
+                    <a class="nav-link" aria-current="page" href="/group/add">Добавить книгу в корзину</a>
                 </li>
             </ul>
             <form class="d-flex">
-                <a href="/logout" role="button" class="btn btn-outline-light">Sign out</a>
+                <a href="/logout" role="button" class="btn btn-outline-light">Выйти</a>
             </form>
         </div>
     </div>
@@ -33,30 +32,26 @@
 <div class="container pt-5">
     <form name="addAuthor" method="post" action="/author/add">
         <div class="mb-3">
-            <label for="authorFirstNameInput" class="form-label">First
-                name</label>
+            <label for="authorFirstNameInput" class="form-label">Имя</label>
             <input class="form-control" id="authortFirstNameInput"
-                   name="authorFirstName" type="text" placeholder="Ivan">
+                   name="authorFirstName" type="text" placeholder="Иван">
         </div>
         <div class="mb-3">
-            <label for="authorLastNameInput" class="form-label">Last
-                name</label>
+            <label for="authorLastNameInput" class="form-label">Отчество</label>
             <input class="form-control" id="authorLastNameInput"
-                   name="authorLastName" type="text" placeholder="Ivanov">
+                   name="authorLastName" type="text" placeholder="Сергеевич">
         </div>
         <div class="mb-3">
-            <label for="authorMiddleNameInput" class="form-label">Middle
-                name</label>
+            <label for="authorMiddleNameInput" class="form-label">Фамилия</label>
             <input class="form-control" id="authorMiddleNameInput"
-                   name="authorMiddleName" type="text" placeholder="Ivanovich">
+                   name="authorMiddleName" type="text" placeholder="Тургенев">
         </div>
         <div class="mb-3">
-            <label for="bookNameInput" class="form-label">Book
-                name</label>
+            <label for="bookNameInput" class="form-label">Название книги</label>
             <input class="form-control" id="bookNameInput"
-                   name="bookName" type="text" placeholder="Буртино">
+                   name="bookName" type="text" placeholder="Отцы и дети">
         </div>
-        <button type="submit" class="btn btn-outline-primary">Add</button>
+        <button type="submit" class="btn btn-outline-primary">Добавить</button>
     </form>
 </div>
 </body>

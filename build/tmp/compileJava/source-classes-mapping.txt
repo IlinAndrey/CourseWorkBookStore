@@ -16,8 +16,8 @@ com/bookstore/repositories/BookRepository.java
  com.bookstore.repositories.BookRepository
 com/bookstore/dto/AuthorResponse.java
  com.bookstore.dto.AuthorResponse
-com/bookstore/config/SecurityConfig.java
- com.bookstore.config.SecurityConfig
+com/bookstore/repositories/AuthorRepository.java
+ com.bookstore.repositories.AuthorRepository
 com/bookstore/dto/BookResponse.java
  com.bookstore.dto.BookResponse
 com/bookstore/service/AuthorService.java
@@ -48,5 +48,5 @@ com/bookstore/BookstoreApplication.java
  com.bookstore.BookstoreApplication
 com/bookstore/Models/Author.java
  com.bookstore.Models.Author
-com/bookstore/repositories/AuthorRepository.java
- com.bookstore.repositories.AuthorRepository
+com/bookstore/config/SecurityConfig.java
+ com.bookstore.config.SecurityConfig

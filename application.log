@@ -617,3 +617,180 @@ Caused by: org.springframework.data.mapping.PropertyReferenceException: No prope
 88129 [http-nio-8080-exec-2] INFO  com.bookstore.service.AuthorService – *****Criteria API*****
 88160 [http-nio-8080-exec-2] INFO  com.bookstore.service.AuthorService – -Students by group name:
 88166 [http-nio-8080-exec-2] INFO  com.bookstore.service.AuthorService – -Students by first and last name:
+466  [background-preinit] INFO  o.h.validator.internal.util.Version – HV000001: Hibernate Validator 6.1.7.Final
+469  [main] INFO  com.bookstore.BookstoreApplication – Starting BookstoreApplication using Java 15.0.2 on DESKTOP-G8UQDLB with PID 9468 (C:\Users\frayz\IdeaProjects\BookStore\build\classes\java\main started by frayz in C:\Users\frayz\IdeaProjects\BookStore)
+472  [main] INFO  com.bookstore.BookstoreApplication – No active profile set, falling back to default profiles: default
+1053 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1101 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 42 ms. Found 3 JPA repository interfaces.
+1550 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
+1556 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
+1556 [main] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
+1557 [main] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/9.0.44]
+1655 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
+1655 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 1156 ms
+1794 [main] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
+1822 [main] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 5.4.29.Final
+1896 [main] INFO  o.h.annotations.common.Version – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+1960 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+2185 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+2193 [main] INFO  org.hibernate.dialect.Dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+3143 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+3155 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+3317 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+4265 [main] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@70eb94d7, org.springframework.security.web.context.SecurityContextPersistenceFilter@4866e0a7, org.springframework.security.web.header.HeaderWriterFilter@1734b1a, org.springframework.security.web.authentication.logout.LogoutFilter@50f13494, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@a1a72d4, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@42e4431, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@34d72f06, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@70b1028d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3340ff7c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7e43b342, org.springframework.security.web.session.SessionManagementFilter@318511f0, org.springframework.security.web.access.ExceptionTranslationFilter@7c359808, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@65a66a75]
+4392 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor – Initializing ExecutorService 'applicationTaskExecutor'
+4702 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
+4755 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8080 (http) with context path ''
+4787 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor – No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+4798 [main] INFO  com.bookstore.BookstoreApplication – Started BookstoreApplication in 4.566 seconds (JVM running for 5.411)
+15134 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
+15134 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
+15135 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 1 ms
+422  [background-preinit] INFO  o.h.validator.internal.util.Version – HV000001: Hibernate Validator 6.1.7.Final
+425  [main] INFO  com.bookstore.BookstoreApplication – Starting BookstoreApplication using Java 15.0.2 on DESKTOP-G8UQDLB with PID 1424 (C:\Users\frayz\IdeaProjects\BookStore\build\classes\java\main started by frayz in C:\Users\frayz\IdeaProjects\BookStore)
+439  [main] INFO  com.bookstore.BookstoreApplication – No active profile set, falling back to default profiles: default
+996  [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1046 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 43 ms. Found 3 JPA repository interfaces.
+1423 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
+1449 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
+1449 [main] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
+1449 [main] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/9.0.44]
+1532 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
+1532 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 1048 ms
+1625 [main] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
+1656 [main] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 5.4.29.Final
+1746 [main] INFO  o.h.annotations.common.Version – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+1815 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+2007 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+2015 [main] INFO  org.hibernate.dialect.Dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2973 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2988 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+3085 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+3466 [main] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@c478e4e, org.springframework.security.web.context.SecurityContextPersistenceFilter@5dd227b7, org.springframework.security.web.header.HeaderWriterFilter@5e198c40, org.springframework.security.web.authentication.logout.LogoutFilter@35b58254, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@599310ab, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@8dcacf1, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1e2b37cd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@14ba7f15, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@68de8522, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2ba08f26, org.springframework.security.web.session.SessionManagementFilter@39420d59, org.springframework.security.web.access.ExceptionTranslationFilter@6787bd41, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2ea4e762]
+3612 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor – Initializing ExecutorService 'applicationTaskExecutor'
+3892 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
+3928 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8080 (http) with context path ''
+3976 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor – No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+3994 [main] INFO  com.bookstore.BookstoreApplication – Started BookstoreApplication in 3.819 seconds (JVM running for 4.355)
+11967 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
+11967 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
+11968 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 1 ms
+417  [background-preinit] INFO  o.h.validator.internal.util.Version – HV000001: Hibernate Validator 6.1.7.Final
+419  [main] INFO  com.bookstore.BookstoreApplication – Starting BookstoreApplication using Java 15.0.2 on DESKTOP-G8UQDLB with PID 15540 (C:\Users\frayz\IdeaProjects\BookStore\build\classes\java\main started by frayz in C:\Users\frayz\IdeaProjects\BookStore)
+419  [main] INFO  com.bookstore.BookstoreApplication – No active profile set, falling back to default profiles: default
+915  [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+969  [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 47 ms. Found 3 JPA repository interfaces.
+1323 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
+1329 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
+1329 [main] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
+1329 [main] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/9.0.44]
+1403 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
+1403 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 956 ms
+1496 [main] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
+1526 [main] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 5.4.29.Final
+1611 [main] INFO  o.h.annotations.common.Version – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+1678 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+1834 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+1844 [main] INFO  org.hibernate.dialect.Dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2598 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2606 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+2701 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+3043 [main] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1b6683c4, org.springframework.security.web.context.SecurityContextPersistenceFilter@60fe75f7, org.springframework.security.web.header.HeaderWriterFilter@5c215642, org.springframework.security.web.authentication.logout.LogoutFilter@3340ff7c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@41463c56, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1f013047, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@69abeb14, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7c8f803d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7c359808, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7db2b614, org.springframework.security.web.session.SessionManagementFilter@416c1b0, org.springframework.security.web.access.ExceptionTranslationFilter@426913c4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@47994b51]
+3132 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor – Initializing ExecutorService 'applicationTaskExecutor'
+3310 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
+3328 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8080 (http) with context path ''
+3342 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor – No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+3349 [main] INFO  com.bookstore.BookstoreApplication – Started BookstoreApplication in 3.172 seconds (JVM running for 3.84)
+16438 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
+16438 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
+16439 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 1 ms
+72442 [http-nio-8080-exec-2] INFO  com.bookstore.service.AuthorService – *****Criteria API*****
+72452 [http-nio-8080-exec-2] INFO  com.bookstore.service.AuthorService – -Students by group name:
+72457 [http-nio-8080-exec-2] INFO  com.bookstore.service.AuthorService – -Students by first and last name:
+425  [background-preinit] INFO  o.h.validator.internal.util.Version – HV000001: Hibernate Validator 6.1.7.Final
+427  [main] INFO  com.bookstore.BookstoreApplication – Starting BookstoreApplication using Java 15.0.2 on DESKTOP-G8UQDLB with PID 13672 (C:\Users\frayz\IdeaProjects\BookStore\build\classes\java\main started by frayz in C:\Users\frayz\IdeaProjects\BookStore)
+427  [main] INFO  com.bookstore.BookstoreApplication – No active profile set, falling back to default profiles: default
+952  [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1001 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 43 ms. Found 3 JPA repository interfaces.
+1362 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
+1369 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
+1369 [main] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
+1369 [main] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/9.0.44]
+1456 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
+1456 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 1001 ms
+1551 [main] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
+1582 [main] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 5.4.29.Final
+1661 [main] INFO  o.h.annotations.common.Version – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+1725 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+1847 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+1856 [main] INFO  org.hibernate.dialect.Dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2421 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2428 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+2520 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2867 [main] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@78829412, org.springframework.security.web.context.SecurityContextPersistenceFilter@51566ce0, org.springframework.security.web.header.HeaderWriterFilter@399fd710, org.springframework.security.web.authentication.logout.LogoutFilter@71d2261e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@544e6b, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7120daa6, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3ba8ef4e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@17e6d07b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5b1f0f26, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6d0bcf8c, org.springframework.security.web.session.SessionManagementFilter@1f013047, org.springframework.security.web.access.ExceptionTranslationFilter@1f7557fe, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2c1a95a2]
+2952 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor – Initializing ExecutorService 'applicationTaskExecutor'
+3099 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
+3118 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8080 (http) with context path ''
+3128 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor – No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+3134 [main] INFO  com.bookstore.BookstoreApplication – Started BookstoreApplication in 2.944 seconds (JVM running for 3.444)
+6332 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
+6332 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
+6333 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 1 ms
+457  [background-preinit] INFO  o.h.validator.internal.util.Version – HV000001: Hibernate Validator 6.1.7.Final
+461  [main] INFO  com.bookstore.BookstoreApplication – Starting BookstoreApplication using Java 15.0.2 on DESKTOP-G8UQDLB with PID 11124 (C:\Users\frayz\IdeaProjects\BookStore\build\classes\java\main started by frayz in C:\Users\frayz\IdeaProjects\BookStore)
+462  [main] INFO  com.bookstore.BookstoreApplication – No active profile set, falling back to default profiles: default
+1020 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1070 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 43 ms. Found 3 JPA repository interfaces.
+1453 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
+1460 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
+1461 [main] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
+1461 [main] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/9.0.44]
+1550 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
+1550 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 1061 ms
+1650 [main] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
+1683 [main] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 5.4.29.Final
+1770 [main] INFO  o.h.annotations.common.Version – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+1836 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+1967 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+1976 [main] INFO  org.hibernate.dialect.Dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2555 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2562 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+2654 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+3009 [main] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1b6683c4, org.springframework.security.web.context.SecurityContextPersistenceFilter@60fe75f7, org.springframework.security.web.header.HeaderWriterFilter@5c215642, org.springframework.security.web.authentication.logout.LogoutFilter@3340ff7c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@41463c56, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1f013047, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@69abeb14, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7c8f803d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7c359808, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7db2b614, org.springframework.security.web.session.SessionManagementFilter@416c1b0, org.springframework.security.web.access.ExceptionTranslationFilter@426913c4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@47994b51]
+3099 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor – Initializing ExecutorService 'applicationTaskExecutor'
+3249 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
+3264 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8080 (http) with context path ''
+3274 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor – No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+3281 [main] INFO  com.bookstore.BookstoreApplication – Started BookstoreApplication in 3.097 seconds (JVM running for 3.611)
+7306 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
+7306 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
+7307 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 0 ms
+434  [background-preinit] INFO  o.h.validator.internal.util.Version – HV000001: Hibernate Validator 6.1.7.Final
+437  [main] INFO  com.bookstore.BookstoreApplication – Starting BookstoreApplication using Java 15.0.2 on DESKTOP-G8UQDLB with PID 13708 (C:\Users\frayz\IdeaProjects\BookStore\build\classes\java\main started by frayz in C:\Users\frayz\IdeaProjects\BookStore)
+438  [main] INFO  com.bookstore.BookstoreApplication – No active profile set, falling back to default profiles: default
+951  [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+999  [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 41 ms. Found 3 JPA repository interfaces.
+1363 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
+1369 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
+1369 [main] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
+1370 [main] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/9.0.44]
+1455 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
+1456 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 989 ms
+1552 [main] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
+1584 [main] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 5.4.29.Final
+1661 [main] INFO  o.h.annotations.common.Version – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+1726 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+1852 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+1861 [main] INFO  org.hibernate.dialect.Dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2534 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2543 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+2641 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2977 [main] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1e2b37cd, org.springframework.security.web.context.SecurityContextPersistenceFilter@3d3b852e, org.springframework.security.web.header.HeaderWriterFilter@dcdb883, org.springframework.security.web.authentication.logout.LogoutFilter@73baf7f0, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@770cbe5d, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@50f13494, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2ba08f26, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@55cb3b7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@8dcacf1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6033f36c, org.springframework.security.web.session.SessionManagementFilter@4fbbd98c, org.springframework.security.web.access.ExceptionTranslationFilter@44c2e8a8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@444c0f9a]
+3055 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor – Initializing ExecutorService 'applicationTaskExecutor'
+3197 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
+3212 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8080 (http) with context path ''
+3222 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor – No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+3228 [main] INFO  com.bookstore.BookstoreApplication – Started BookstoreApplication in 3.039 seconds (JVM running for 3.609)
+6051 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
+6051 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
+6052 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 1 ms
