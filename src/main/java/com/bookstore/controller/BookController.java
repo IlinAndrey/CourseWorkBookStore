@@ -19,6 +19,7 @@ public class BookController {
     private final DtoConverter dtoConverter;
     private final BookService bookService;
 
+
     @GetMapping
     public String getBooks(Map<String, Object> model) {
         model.put(
@@ -31,8 +32,7 @@ public class BookController {
     @PostMapping("{bookId}")
     public String getBook(
             @PathVariable long bookId,
-            Map<String, Object> model
-    ) {
+            Map<String, Object> model) {
         model.put(
                 "book",
                 bookService.takeBookById(bookId, dtoConverter::toBookResponse)
@@ -40,11 +40,18 @@ public class BookController {
         return "book";
     }
 
+    @PostMapping("buy/{bookId}")
+    public String price(){
+        return "buy/{bookId}";
+    }
+
+
     @PostMapping("{bookId}/delete")
     public RedirectView delete(@PathVariable long bookId) {
         bookService.delete(bookId);
         return new RedirectView("/home");
     }
+
 
     @GetMapping("add")
     public String add() {

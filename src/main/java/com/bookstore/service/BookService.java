@@ -24,12 +24,14 @@ public class BookService {
     @Transactional
     public void publish(AuthorToBookRequest request) {
         String bookName = request.getBookName();
+        String bookPrice = request.getBookPrice();
         Book book = bookRepository.findByBookName(bookName);
         if (book != null) {
             return;
         }
         book = new Book();
         book.setBookName(request.getBookName());
+        book.setBookPrice(request.getBookPrice());
         bookRepository.save(book);
     }
 
@@ -52,6 +54,7 @@ public class BookService {
         }
         return toDto.apply(book.get());
     }
+
 
     @Transactional
     public void delete(long id) {

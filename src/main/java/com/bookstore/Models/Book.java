@@ -16,6 +16,8 @@ public class Book {
     private Long id;
     @Column(nullable = false, length = 20, unique = true)
     private String bookName;
+    @Column(nullable = false, length = 20, unique = true)
+    private String bookPrice;
     @OneToMany(mappedBy = "book", fetch = FetchType.LAZY)
     private List<Author> authors;
 }

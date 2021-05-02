@@ -24,6 +24,7 @@ public class DtoConverter {
         BookResponse response = new BookResponse();
         response.setId(book.getId());
         response.setBookName(book.getBookName());
+        response.setBookPrice(book.getBookPrice());
         response.setAuthors(toAuthorResponseList(book.getAuthors()));
         return response;
     }

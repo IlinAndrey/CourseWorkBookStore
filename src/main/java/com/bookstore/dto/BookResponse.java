@@ -14,5 +14,6 @@ public class BookResponse {
     private Long id;
     @NotBlank
     private String bookName;
+    private String bookPrice;
     private List<AuthorResponse> authors;
 }

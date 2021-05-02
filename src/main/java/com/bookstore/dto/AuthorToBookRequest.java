@@ -17,4 +17,5 @@ public class AuthorToBookRequest {
     private final String authorMiddleName;
     @NotBlank
     private final String bookName;
+    private final String bookPrice;
 }

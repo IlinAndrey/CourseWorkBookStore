@@ -35,14 +35,14 @@ public class AuthorService {
 
         log.info("*****Criteria API*****");
         List<Author> authorsByBookName = authorRepository.findAuthorsByBookName("Buratino");
-        log.info("-Students by group name:");
+        log.info("-Authors by book name:");
         authorsByBookName
                 .forEach(st ->
                         log.info(st.getLastName() + " " + st.getFirstName() + " " + st.getMiddleName() + " -- " + st.getBook().getBookName())
                 );
 
         List<Author> authorsByFirstAndLastName = authorRepository.findAuthorsByFirstNameAndLastName("Alexey", "Tolstoy");
-        log.info("-Students by first and last name:");
+        log.info("-Authors by first and last name:");
         authorsByFirstAndLastName
                 .forEach(st ->
                         log.info(st.getLastName() + " " + st.getFirstName() + " " + st.getMiddleName() + " -- " + st.getBook().getBookName())

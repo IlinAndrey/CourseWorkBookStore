@@ -38,4 +38,5 @@ public class AuthorController {
         authorService.delete(authorId);
         return new RedirectView("/home");
     }
+
 }
