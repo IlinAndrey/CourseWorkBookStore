@@ -1,5 +1,6 @@
 package com.bookstore.controller;
 
+import com.bookstore.Models.Book;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -38,11 +39,6 @@ public class BookController {
                 bookService.takeBookById(bookId, dtoConverter::toBookResponse)
         );
         return "book";
-    }
-
-    @PostMapping("buy/{bookId}")
-    public String price(){
-        return "buy/{bookId}";
     }
 
 

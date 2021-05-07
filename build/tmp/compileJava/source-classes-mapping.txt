@@ -40,13 +40,13 @@ com/bookstore/repositories/UserRepository.java
  com.bookstore.repositories.UserRepository
 com/bookstore/service/AuthorService.java
  com.bookstore.service.AuthorService
-com/bookstore/repositories/BookRepository.java
- com.bookstore.repositories.BookRepository
 com/bookstore/service/BookService.java
  com.bookstore.service.BookService
 com/bookstore/controller/BookController.java
  com.bookstore.controller.BookController
-com/bookstore/controller/AuthorController.java
- com.bookstore.controller.AuthorController
 com/bookstore/controller/HomeController.java
  com.bookstore.controller.HomeController
+com/bookstore/repositories/BookRepository.java
+ com.bookstore.repositories.BookRepository
+com/bookstore/controller/AuthorController.java
+ com.bookstore.controller.AuthorController

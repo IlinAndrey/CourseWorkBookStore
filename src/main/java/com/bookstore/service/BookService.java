@@ -2,7 +2,6 @@ package com.bookstore.service;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.bookstore.dto.AuthorToBookRequest;
 import com.bookstore.Models.Book;
@@ -45,6 +44,7 @@ public class BookService {
     public List<Book> getAllBooks() {
         return bookRepository.findAll();
     }
+
 
     @Transactional
     public <T> T takeBookById(long id, Function<Book, T> toDto) {

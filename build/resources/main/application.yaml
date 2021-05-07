@@ -15,7 +15,7 @@ spring:
     platform: postgres
     url: jdbc:postgresql://localhost:5432/bookstorev2
     username: postgres
-    password: 123
+    password: Dron0p4Ka
     driverClassName: org.postgresql.Driver
   session:
     store-type: jdbc

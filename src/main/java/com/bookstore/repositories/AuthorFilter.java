@@ -8,5 +8,6 @@ import java.util.List;
 @Transactional
 public interface AuthorFilter {
     List<Author> findAuthorsByBookName(String bookName);
+    List<Author> findAuthorsByBookPrice(String bookPrice);
     List<Author> findAuthorsByFirstNameAndLastName(String fName, String lName);
 }

@@ -36,6 +36,23 @@ public class AuthorFilterImpl implements AuthorFilter {
     }
 
     @Override
+    public List<Author> findAuthorsByBookPrice(String bookPrice) {
+        CriteriaBuilder cb = em.getCriteriaBuilder();
+        CriteriaQuery<Author> cq = cb.createQuery(Author.class);
+
+        Root<Author> author = cq.from(Author.class);
+        List<Predicate> predicates = new ArrayList<>();
+
+        if (bookPrice != null) {
+            predicates.add(cb.equal(author.get("bookPrice"), bookPrice));
+        }
+        cq.orderBy(cb.asc(author.get("book").get("bookName")));
+        cq.where(predicates.toArray(new Predicate[0]));
+
+        return em.createQuery(cq).getResultList();
+    }
+
+    @Override
     public List<Author> findAuthorsByFirstNameAndLastName(String fName, String lName) {
         CriteriaBuilder cb = em.getCriteriaBuilder();
         CriteriaQuery<Author> cq = cb.createQuery(Author.class);
