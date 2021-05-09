@@ -14,7 +14,7 @@ import javax.persistence.ManyToOne;
 @NoArgsConstructor
 @Entity
 public class Card {
-
+//Класс Карты
     @Id
     private String id;
 

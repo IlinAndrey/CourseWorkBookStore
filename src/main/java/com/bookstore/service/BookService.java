@@ -14,7 +14,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
 import java.util.List;
-
+//Сервис класса книга
 @RequiredArgsConstructor
 @Service
 public class BookService {
@@ -49,7 +49,7 @@ public class BookService {
 
     @Transactional(readOnly = true)
     public List<Book> findBookByLike(String name){
-        return bookRepository.findAllByBookNameIgnoreCaseContainingOrBookAuthorIgnoreCaseContainingOrBookPublishIgnoreCaseContaining(name, name, name);
+        return bookRepository.findAllByBookNameIgnore(name, name, name);
     }
 
     @Transactional

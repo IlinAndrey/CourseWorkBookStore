@@ -13,7 +13,7 @@ import java.io.Serializable;
 @Entity
 @NoArgsConstructor
 public class Orderlist implements Serializable {
-
+//Класс списка заказов
     @EmbeddedId
     private OrderlistMultiid orderlistMultiid;
 

@@ -15,7 +15,7 @@ import java.util.List;
 @Entity
 @NoArgsConstructor
 public class Book {
-
+//Класс Книги
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "BOOK_UID")

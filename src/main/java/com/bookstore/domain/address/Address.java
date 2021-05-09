@@ -11,7 +11,7 @@ import javax.persistence.*;
 @Entity
 @NoArgsConstructor
 public class Address {
-
+//Класс Адреса
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long uid;

@@ -18,7 +18,7 @@ import java.util.List;
 @Entity
 @NoArgsConstructor
 public class Users {
-
+//Класс пользователя
     @Id
     private String id;
 

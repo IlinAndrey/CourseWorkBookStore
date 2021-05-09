@@ -13,7 +13,7 @@ import java.util.List;
 @Entity
 @NoArgsConstructor
 public class Orders {
-
+//Класс заказов
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long uid;

@@ -13,7 +13,7 @@ import java.util.List;
 @NoArgsConstructor
 @Entity
 public class Cart {
-
+//Класс корзины
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long uid;

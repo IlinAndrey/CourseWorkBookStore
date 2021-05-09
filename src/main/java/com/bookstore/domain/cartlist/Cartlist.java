@@ -13,7 +13,7 @@ import java.io.Serializable;
 @Entity
 @NoArgsConstructor
 public class Cartlist implements Serializable {
-
+//Класс списка корзины
     @EmbeddedId
     private MultiId multiId;
 
