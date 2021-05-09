@@ -1,68 +1,79 @@
 package com.bookstore.service;
 
+import com.bookstore.domain.book.Book;
+import com.bookstore.domain.book.BookRepository;
+import com.bookstore.domain.cart.CartRepository;
+import com.bookstore.session.UsersInfo;
+import com.bookstore.web.books.dto.BookDeleteDto;
+import com.bookstore.web.books.dto.BookSaveDto;
+import com.bookstore.web.books.dto.BookUpdateCountDto;
+import com.bookstore.web.books.dto.BookUpdateDto;
 import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
-import com.bookstore.dto.AuthorToBookRequest;
-import com.bookstore.Models.Book;
-import com.bookstore.repositories.BookRepository;
-import com.bookstore.repositories.AuthorRepository;
+import org.springframework.transaction.annotation.Transactional;
 
-import javax.transaction.Transactional;
+import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
-import java.util.function.Function;
 
-@Slf4j
-@Service
 @RequiredArgsConstructor
+@Service
 public class BookService {
     private final BookRepository bookRepository;
-    private final AuthorRepository authorRepository;
+    private final CartRepository cartRepository;
+    private final UsersInfo usersInfo;
 
     @Transactional
-    public void publish(AuthorToBookRequest request) {
-        String bookName = request.getBookName();
-        String bookPrice = request.getBookPrice();
-        Book book = bookRepository.findByBookName(bookName);
-        if (book != null) {
-            return;
-        }
-        book = new Book();
-        book.setBookName(request.getBookName());
-        book.setBookPrice(request.getBookPrice());
-        bookRepository.save(book);
+    public String saveBook(BookSaveDto bookSaveDto){
+        return bookRepository.save(bookSaveDto.toEntity()).toString();
     }
 
-    @Transactional
-    public <T> T takeAllBooks(Function<List<Book>, T> toDto) {
-        List<Book> books = bookRepository.findAll();
-        return toDto.apply(books);
-    }
-
-    @Transactional
-    public List<Book> getAllBooks() {
+    @Transactional(readOnly = true)
+    public List<Book> findAllBook(){
         return bookRepository.findAll();
     }
 
-
-    @Transactional
-    public <T> T takeBookById(long id, Function<Book, T> toDto) {
-        Optional<Book> book = bookRepository.findById(id);
-        if (book.isEmpty()) {
-            return null;
-        }
-        return toDto.apply(book.get());
+    @Transactional(readOnly = true)
+    public Book findBookById(Long bookUid){
+        return bookRepository.findById(bookUid).get();
     }
 
+    @Transactional
+    public void  updateBook(Long bookUid, BookUpdateDto bookUpdateDto){
+        findBookById(bookUid).updateBook(bookUpdateDto);
+    }
 
     @Transactional
-    public void delete(long id) {
-        Optional<Book> book = bookRepository.findById(id);
-        if (book.isEmpty()) {
-            return;
+    public void deleteBook(Long uid){
+        bookRepository.delete(findBookById(uid));
+    }
+
+    @Transactional(readOnly = true)
+    public List<Book> findBookByLike(String name){
+        return bookRepository.findAllByBookNameIgnoreCaseContainingOrBookAuthorIgnoreCaseContainingOrBookPublishIgnoreCaseContaining(name, name, name);
+    }
+
+    @Transactional
+    public void updateCountBook(List<Long> bookUid, List<Long> count){
+        int index = 0;
+        for (Long bookuid : bookUid) {
+            System.out.println("Book count update");
+            Book book = new Book();
+            book = findBookById(bookuid);
+            Long updateBookCount = book.getBookCount() - count.get(index);
+            BookUpdateCountDto bookUpdateCountDto = new BookUpdateCountDto();
+            bookUpdateCountDto.setBookCount(updateBookCount);
+            findBookById(bookuid).updateCount(bookUpdateCountDto);
+            index++;
         }
-        authorRepository.deleteAllByBook(book.get());
-        bookRepository.deleteById(id);
+    }
+
+    @Transactional(readOnly = true)
+    public List<Book> findBookByArrayUid(List<Long> bookUid){
+        List<Book> arrBook = new ArrayList<Book>();
+        for (Long uid : bookUid) {
+            arrBook.add(bookRepository.getOne(uid));
+        }
+        return arrBook;
     }
 }
+
