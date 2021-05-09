@@ -42,11 +42,6 @@ public class BookService {
         findBookById(bookUid).updateBook(bookUpdateDto);
     }
 
-    @Transactional
-    public void deleteBook(Long uid){
-        bookRepository.delete(findBookById(uid));
-    }
-
     @Transactional(readOnly = true)
     public List<Book> findBookByLike(String name){
         return bookRepository.findAllByBookNameIgnore(name, name, name);
@@ -74,6 +69,12 @@ public class BookService {
             arrBook.add(bookRepository.getOne(uid));
         }
         return arrBook;
+    }
+
+
+    @Transactional
+    public void deleteBook(Long uid){
+        bookRepository.delete(findBookById(uid));
     }
 }
 

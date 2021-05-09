@@ -33,11 +33,18 @@ public class Book {
 
     private String bookAuthor;
 
-    @OneToMany(mappedBy = "book", cascade = {CascadeType.REMOVE})
-    private List<Cartlist> cartlists;
 
     @OneToMany(mappedBy = "book", orphanRemoval = true)
     private List<Orderlist> orderlists;
+
+    @OneToMany(mappedBy = "book", cascade = {CascadeType.REMOVE})
+    private List<Cartlist> cartlists;
+
+
+    public void updateCount(BookUpdateCountDto bookUpdateCountDto){
+        this.bookCount = bookUpdateCountDto.getBookCount();
+    }
+
 
     @Builder
     public Book(Long uid, String bookName, Long bookCount, Long bookPrice, String bookDetail, String bookPublish, String bookAuthor, List<Cartlist> cartlists, List<Orderlist> orderlists){
@@ -59,9 +66,5 @@ public class Book {
         this.bookDetail = bookUpdateDto.getBookDetail();
         this.bookPublish = bookUpdateDto.getBookPublish();
         this.bookAuthor = bookUpdateDto.getBookAuthor();
-    }
-
-    public void updateCount(BookUpdateCountDto bookUpdateCountDto){
-        this.bookCount = bookUpdateCountDto.getBookCount();
     }
 }
