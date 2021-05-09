@@ -16,7 +16,6 @@ import java.util.List;
 @NoArgsConstructor
 public class Book {
 
-    //책번호
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "BOOK_UID")
