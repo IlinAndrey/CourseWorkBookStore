@@ -1,50 +1,25 @@
 package com.bookstore.config;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
+
 import org.springframework.context.annotation.Configuration;
-import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.security.crypto.password.PasswordEncoder;
-import com.bookstore.service.UserService;
 
 @Configuration
 @EnableWebSecurity
-public class SecurityConfig extends WebSecurityConfigurerAdapter {
-    private UserService userService;
-
-    @Autowired
-    public void setUserDetailsService(UserService userService) {
-        this.userService = userService;
-    }
-
-    @Override
-    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-        auth
-                .userDetailsService(userService)
-                .passwordEncoder(passwordEncoder());
-    }
+public class SecurityConfig extends WebSecurityConfigurerAdapter{
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
-                .csrf()
+            .csrf()
                 .disable()
-                .cors()
-                .disable()
-                .authorizeRequests()
-                .antMatchers("/login", "/sign-up").not().authenticated()
-                .anyRequest().authenticated()
-                .and()
-                .formLogin();
+            .authorizeRequests()
+                .antMatchers("/", "/css/**", "/images/**", "/js/**", "/profile")
+                .permitAll()
+                .antMatchers("/users/login")
+                .permitAll();
     }
-
-
-    @Bean
-    protected PasswordEncoder passwordEncoder() {
-        return new BCryptPasswordEncoder();
-    }
+    
 }
